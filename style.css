@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PT Serif', serif;
+    /* background-color: #c2cad0; */
+    background-color: mediumpurple;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+span {
+    color: white;
+    cursor: pointer;
+}
+
+.main,
+.main2,
+.main3 {
+    position: relative;
+    width: 500px;
+    height: 200px;
+    background-color: black;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px rgba(128, 128, 128, 10);
+}
+
+input {
+    width: 220px;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    border: none;
+    color: midnightblue;
+    font-size: 18px;
+    border-radius: 10px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+select {
+    width: 220px;
+    padding: 10px;
+    border: none;
+    color: midnightblue;
+    font-size: 18px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+option {
+    background-color: #c2cad0;
+    color: black;
+}
+
+#left-drop,
+#left-drop-weight,
+#left-drop-time {
+    position: relative;
+    left: 0%;
+    background-color: transparent;
+    margin-right: 13px;
+    color: snow;
+}
+
+#right-drop,
+#right-drop-weight,
+#right-drop-time {
+    color: snow;
+    background-color: transparent;
+}
+
+@media screen and (max-width:375px) {
+    body {
+        background-color: mediumpurple;
+    }
+    .main,
+    .main2,
+    .main3 {
+        width: 90%;
+        height: auto;
+    }
+    input {
+        width: 40%;
+        font-size: 14px;
+        margin: 5px;
+    }
+    select {
+        width: 45%;
+        font-size: 14px;
+    }
+    .main3 {
+        margin-bottom: 40%;
+    }
+}
